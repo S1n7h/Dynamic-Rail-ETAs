@@ -1,0 +1,36 @@
+# crawled + generated data (regenerate with the scripts; don't commit)
+data/
+
+# large OSM extract (download from geofabrik, see README)
+*.osm.pbf
+
+# deps
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# os / editor noise
+.DS_Store
+*.log
+# =========================
+# Python
+# =========================
+
+.venv/
+venv/
+env/
+
+__pycache__/
+*.py[cod]
+
+
+# =========================
+# Generated / Raw Train Data
+# =========================
+
+python/newraw/
+python/compiledraw/
+python/compileaggregateraw/
+python/convertednewraw/

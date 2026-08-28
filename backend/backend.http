@@ -1,0 +1,24 @@
+### Test backend
+GET http://localhost:6769/
+
+### Get train 12301
+GET http://localhost:6769/12301
+
+### Get train 12001
+GET http://localhost:6769/12301
+
+###
+POST http://localhost:6769/12301/ASN
+Content-Type: application/json
+
+{
+    "delay": 20
+}
+
+###
+POST http://localhost:6769/12301/KPK
+Content-Type: application/json
+
+{
+    "delay": -5
+}
