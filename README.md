@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # railpull — Indian Railways timetable toolkit
 
 **Pull the current Indian Railways timetable straight from the source, and turn
@@ -177,3 +178,6 @@ If you're browsing and this was useful, the tags that describe it:
 
 Built by shwetank. Sibling project: a live map that renders this data as every
 train moving across India at once.
+=======
+# Dynamic-Rail-ETAs
+>>>>>>> ac947904f10e602294bcc3832c989af2fd4be1c1
