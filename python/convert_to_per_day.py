@@ -158,15 +158,15 @@ def main():
                 filename
             )
 
-            # --------------------------------------------------
-            # Don't overwrite an existing compiled file
-            # --------------------------------------------------
+            # # --------------------------------------------------
+            # # Don't overwrite an existing compiled file
+            # # --------------------------------------------------
 
-            if os.path.exists(output_file):
-                print(
-                    f"  Already exists, skipping: {output_file}"
-                )
-                continue
+            # if os.path.exists(output_file):
+            #     print(
+            #         f"  Already exists, skipping: {output_file}"
+            #     )
+            #     continue
 
             print(f"  Processing {filename}")
 

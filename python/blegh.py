@@ -14,7 +14,7 @@ trains = [
     "22415", "22416", "22439", "22440", "20833", "20834",
 ]
 
-start_date = date(2026, 8, 27)
+start_date = date(2026, 8, 26)
 end_date = date.today()
 
 # Create the main folder
@@ -38,15 +38,15 @@ for train_number in trains:
             f"{train_number}_{date_string}.json"
         )
 
-        # --------------------------------------------------
-        # Don't fetch or overwrite an existing file
-        # --------------------------------------------------
+        # # --------------------------------------------------
+        # # Don't fetch or overwrite an existing file
+        # # --------------------------------------------------
 
-        if os.path.exists(filename):
-            print(f"Already exists, skipping: {filename}")
+        # if os.path.exists(filename):
+        #     print(f"Already exists, skipping: {filename}")
 
-            current_date += timedelta(days=1)
-            continue
+        #     current_date += timedelta(days=1)
+        #     continue
 
         print(f"Fetching {train_number} for {date_string}...")
 
