@@ -1,3 +1,4 @@
+const connectDatabase = require("./config/database");
 const express = require("express");
 const cors = require("cors");
 
@@ -17,6 +18,12 @@ app.get("/", (req, res) => {
 //Whenever a request comes into the server, allow trainEndpoints to handle matching routes.
 app.use("/", trainEndpoints);
 
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-});
+async function startServer() {
+    await connectDatabase();
+
+    app.listen(PORT, "0.0.0.0", () => {
+        console.log(`Server running at http://localhost:${PORT}`);
+    });
+}
+
+startServer();

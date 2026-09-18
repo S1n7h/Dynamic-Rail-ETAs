@@ -14,7 +14,7 @@ trains = [
     "22415", "22416", "22439", "22440", "20833", "20834",
 ]
 
-start_date = date(2026, 8, 26)
+start_date = date(2026, 9, 8)
 end_date = date.today()
 
 # Create the main folder
