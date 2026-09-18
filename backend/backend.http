@@ -22,19 +22,3 @@ Content-Type: application/json
 {
     "delay": -5
 }
-
-### 
-GET https://maps.googleapis.com/maps/api/geocode/json?latlng=22.5726,88.3639&key=AIzaSyASDr2_ZNqVIZNplWf5uL_PPVXMqquwLjM
-
-###
-var requestOptions = {
-  method: 'GET',
-};
-
-fetch("https://api.geoapify.com/v1/geocode/reverse?lat=51.21709661403662&lon=6.7782883744862374&apiKey=75f3d791df17437689fe795653f5a575", requestOptions)
-  .then(response => response.json())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-
-###
-GET https://api.geoapify.com/v1/geocode/reverse?lat=22.5726&lon=88.3639&apiKey=75f3d791df17437689fe795653f5a575
